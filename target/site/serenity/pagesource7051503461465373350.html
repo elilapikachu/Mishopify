@@ -1,0 +1,519 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;!--&lt;![endif]--&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;title&gt;<br/>
+  Create Account – Sauce Demo<br/>
+  &lt;/title&gt;<br/>
+  &lt;link rel="canonical" href="https://sauce-demo.myshopify.com/account/register"&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"&gt;<br/>
+  &lt;meta property="og:type" content="website"&gt;<br/>
+  &lt;meta property="og:title" content="Create Account"&gt;<br/>
+  &lt;meta property="og:url" content="https://sauce-demo.myshopify.com/account/register"&gt;<br/>
+  &lt;meta property="og:site_name" content="Sauce Demo"&gt;<br/>
+  &lt;link href="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/theme.scss.css?v=137440661423078363071656106300" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;script type="text/javascript" async src="https://tag.marinsm.com/serve/55f0a404808337080a0001ab.js"&gt;&lt;/script&gt;<br/>
+  &lt;script async src="//connect.facebook.net/en_US/fbds.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" async src="//sauce-demo.myshopify.com/cdn/s/trekkie.storefront.6790784e88524d17bc2df67c3d0c5047adb2d676.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.fancybox.js?v=35668124874407433581394656067" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.elevatezoom.js?v=35333893780288212601394656066" type="text/javascript"&gt;&lt;/script&gt;&lt;!--[if lt IE 9]&gt;<br/>
+    &lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;<br/>
+  &lt;![endif]--&gt;<br/>
+  &lt;script src="//sauce-demo.myshopify.com/cdn/shopifycloud/shopify/assets/themes_support/shopify_common-33bb9d312118840468a53f36b59c62c1e8f2b7d1a0a77250db9e300441827470.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="//sauce-demo.myshopify.com/cdn/shopifycloud/shopify/assets/themes_support/customer_area-4beccea87758d91106a581ba89341d9b51842f6da79209258c8297239e950343.js" type="text/javascript"&gt;&lt;/script&gt;&lt;!--[if lt IE 8]&gt;<br/>
+    &lt;script src="//sauce-demo.myshopify.com/cdn/s/shopify/json2.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;![endif]--&gt;<br/>
+  &lt;script src="//sauce-demo.myshopify.com/cdn/shopifycloud/shopify/assets/themes_support/option_selection-86cdd286ddf3be7e25d68b9fc5965d7798a3ff6228ff79af67b3f4e41d6a34be.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;link rel="shortcut icon" href="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/favicon.ico?v=183549823693799901941394656066"&gt;<br/>
+  &lt;link rel="apple-touch-icon" href="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/apple-touch-icon.png?v=126014001527604476341394656065"&gt;<br/>
+  &lt;link rel="apple-touch-icon" sizes="72x72" href="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/apple-touch-icon-72x72.png?v=90122434896318235351394656065"&gt;<br/>
+  &lt;link rel="apple-touch-icon" sizes="114x114" href="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/apple-touch-icon-114x114.png?v=59914786939731460241394656065"&gt;<br/>
+  &lt;script&gt; Shopify.money_format = "&pound;{{amount}}";&lt;/script&gt;<br/>
+  &lt;script src="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.theme.js?v=42021284561027497791425319943" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');&lt;/script&gt;<br/>
+  &lt;meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/3991157/digital_wallets/dialog"&gt;<br/>
+  &lt;script async src="/checkouts/internal/preloads.js?locale=en-CO"&gt;&lt;/script&gt;<br/>
+  &lt;script id="shopify-features" type="application/json"&gt;{"accessToken":"72f552fd0becefb7bd991ef65f7678a6","betas":["rich-media-storefront-analytics"],"domain":"sauce-demo.myshopify.com","predictiveSearch":true,"shopId":3991157,"smart_payment_buttons_url":"https:\/\/sauce-demo.myshopify.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/sauce-demo.myshopify.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}&lt;/script&gt;<br/>
+  &lt;script&gt;var Shopify = Shopify || {};<br/>
+Shopify.shop = "sauce-demo.myshopify.com";<br/>
+Shopify.locale = "en";<br/>
+Shopify.currency = {"active":"GBP","rate":"1.0"};<br/>
+Shopify.country = "CO";<br/>
+Shopify.theme = {"name":"Simple OLD","id":7139093,"schema_name":null,"schema_version":null,"theme_store_id":578,"role":"main"};<br/>
+Shopify.theme.handle = "null";<br/>
+Shopify.theme.style = {"id":null,"handle":null};<br/>
+Shopify.cdnHost = "sauce-demo.myshopify.com/cdn";<br/>
+Shopify.routes = Shopify.routes || {};<br/>
+Shopify.routes.root = "/";&lt;/script&gt;<br/>
+  &lt;script type="module"&gt;!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);&lt;/script&gt;<br/>
+  &lt;script&gt;!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);&lt;/script&gt;<br/>
+  &lt;script id="shop-js-analytics" type="application/json"&gt;{"pageType":"customers/register"}&lt;/script&gt;<br/>
+  &lt;script id="__st"&gt;var __st={"a":3991157,"offset":0,"reqid":"73995dff-e158-44ee-9d4f-009d65389f3c-1742390629","pageurl":"sauce-demo.myshopify.com\/account\/register","u":"64677dc1d749"};&lt;/script&gt;<br/>
+  &lt;script&gt;window.ShopifyPaypalV4VisibilityTracking = true;&lt;/script&gt;<br/>
+  &lt;script id="captcha-bootstrap"&gt;!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=&gt;t.map((([t,e])=&gt;`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=&gt;()=&gt;t?[...document.querySelectorAll(t)].map((t=&gt;t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=&gt;{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=&gt;t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=&gt;{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=&gt;{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=&gt;n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=&gt;{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=&gt;v().includes(t);t.addEventListener('submit',(t=&gt;{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=&gt;Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=&gt;t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=&gt;{t&&!t.dataset[E]&&(n(t,e.some((e=&gt;e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=&gt;{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=&gt;{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=&gt;'true'===t.dataset.shopifyCaptcha))])].forEach((e=&gt;S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();&lt;/script&gt;<br/>
+  &lt;script integrity="sha256-EGCDRYTvIEOXsReXgqGwkAR+5Dl8tickSrieA/ZcQwc=" data-source-attribution="shopify.loadfeatures" defer src="//sauce-demo.myshopify.com/cdn/shopifycloud/shopify/assets/storefront/load_feature-1060834584ef204397b1179782a1b090047ee4397cb627244ab89e03f65c4307.js" crossorigin="anonymous"&gt;&lt;/script&gt;<br/>
+  &lt;script data-source-attribution="shopify.dynamic_checkout.dynamic.init"&gt;var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://sauce-demo.myshopify.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};<br/>
+&lt;/script&gt;<br/>
+  &lt;script data-source-attribution="shopify.dynamic_checkout.buyer_consent"&gt;<br/>
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);<br/>
+&lt;/script&gt;<br/>
+  &lt;script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap"&gt;document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));<br/>
+&lt;/script&gt;<br/>
+  &lt;script&gt;window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');&lt;/script&gt;&lt;!-- Sauce code start --&gt;<br/>
+  &lt;script type="text/javascript"&gt;<br/>
+  (function () {<br/>
+<br/>
+    window.Sauce={isReady:!1,options:{},init:function(a){for(var b in a)this.options[b]=a[b];var c=document.createElement("script");c.src="//dk7vxmpleem9z.cloudfront.net/sgmnt.min.js",c.async=!0,c.id="sauce-js",document.getElementsByTagName("head")[0].appendChild(c)},readyCallbacks:[],ready:function(a){this.isReady?a():this.readyCallbacks.push(a)},loadApp:function(){var a=arguments;this.readyCallbacks.push(function(){Sauce.loadApp.apply(Sauce,a)})},loadCustomApp:function(){var a=arguments;this.readyCallbacks.push(function(){Sauce.loadCustomApp.apply(Sauce,a)})},_data:{},describe:function(a,b){this._data[a]=b}};<br/>
+<br/>
+    Sauce.init({ id: "581f9d6675dcdd0a007251ed" });<br/>
+<br/>
+    var pageType;<br/>
+    <br/>
+      pageType = 'register';<br/>
+    <br/>
+<br/>
+    Sauce.describe('page', {<br/>
+      type: pageType,<br/>
+      url: window.location.href<br/>
+    });<br/>
+<br/>
+    <br/>
+<br/>
+    <br/>
+<br/>
+    var cart = {<br/>
+      currency: "GBP",<br/>
+      subtotal: 0.00,<br/>
+      total: 0.00,<br/>
+      lineItems: []<br/>
+    };<br/>
+    <br/>
+    Sauce.describe("cart", cart);<br/>
+<br/>
+  }());<br/>
+&lt;/script&gt;<br/>
+  &lt;script src="//dk7vxmpleem9z.cloudfront.net/sgmnt.min.js" async id="sauce-js"&gt;&lt;/script&gt;&lt;!--/ Sauce code end --&gt;<br/>
+  &lt;script&gt;<br/>
+    <br/>
+    Sauce.ready(function () {<br/>
+      console.log('Sauce is ready');<br/>
+      <br/>
+      Sauce.isVisitorInGroup('a1u5BI', function (result) {<br/>
+        console.log('isVisitorInGroup: in group uk visitors', result);<br/>
+      });<br/>
+      <br/>
+      Sauce.whenVisitorInGroup('a1u5BI', function () {<br/>
+        console.log('whenVisitorInGroup: in group uk visitors');<br/>
+      });<br/>
+    });<br/>
+  &lt;/script&gt;<br/>
+  &lt;link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch"&gt;<br/>
+  &lt;script&gt;(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 3991157,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "customers/register"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());&lt;/script&gt;<br/>
+  &lt;script id="web-pixels-manager-setup"&gt;(function e(e,d,r,n,o){if(!Boolean(null===(a=null===(i=window.Shopify)||void 0===i?void 0:i.analytics)||void 0===a?void 0:a.replayQueue)){var i,a;window.Shopify=window.Shopify||{};var t=window.Shopify;t.analytics=t.analytics||{};var s=t.analytics;s.replayQueue=[],s.publish=function(e,d,r){return s.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=function(){var e={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[2-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[2-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/},d=e.modern,r=e.legacy,n=navigator.userAgent;return n.match(d)?"modern":n.match(r)?"legacy":"unknown"}(),u="modern"===l?"modern":"legacy",c=(null!=o?o:{modern:"",legacy:""})[u],f=function(e){return[e.baseUrl,"/wpm","/b",e.hashVersion,"modern"===e.buildTarget?"m":"l",".js"].join("")}({baseUrl:r,hashVersion:n,buildTarget:u}),m=function(e){var d=e.version,r=e.bundleTarget,n=e.surface,o=e.pageUrl,i=e.monorailEndpoint;return{emit:function(e){var a=e.status,t=e.errorMsg,s=(new Date).getTime(),l=JSON.stringify({metadata:{event_sent_at_ms:s},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:d,bundle_target:r,page_url:o,status:a,surface:n,error_msg:t},metadata:{event_created_at_ms:s}}]});if(!i)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(i,l)}catch(e){}var u=new XMLHttpRequest;try{return u.open("POST",i,!0),u.setRequestHeader("Content-Type","text/plain"),u.send(l),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:n,bundleTarget:l,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint});try{!function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,i=e.onerror,a=e.sri,t=document.createElement("script"),s=document.querySelector("head"),l=document.querySelector("body");if(t.async=n,t.src=d,a&&(t.integrity=a,t.crossOrigin="anonymous"),o&&t.addEventListener("load",o),i&&t.addEventListener("error",i),s)s.appendChild(t);else{if(!l)throw new Error("Did not find a head or body element to append the script");l.appendChild(t)}}({src:f,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null===(d=null===(e=window.Shopify)||void 0===e?void 0:e.analytics)||void 0===d?void 0:d.initialized)}()){"object"==typeof e&&(e.browserTarget=l);var r=window.webPixelsManager.init(e)||void 0;if(r){d(r);var n=window.Shopify.analytics;n.replayQueue.forEach((function(e){var d=e[0],n=e[1],o=e[2];r.publishCustomEvent(d,n,o)})),n.replayQueue=[],n.publish=r.publishCustomEvent,n.visitor=r.visitor,n.initialized=!0}}},onerror:function(){return m.emit({status:"failed",errorMsg:"".concat(f," has failed to load")})},sri:function(e){var d=/^sha384-[A-Za-z0-9+/=]+$/;return"string"==typeof e&&d.test(e)}(c)?c:""}),m.emit({status:"loading"})}catch(e){m.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}})({shopId: 3991157,storefrontBaseUrl: "https://sauce-demo.myshopify.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["6a396365"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0402","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0402","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,effectiveTopLevelDomain: "",initData: {"shop":{"name":"Sauce Demo","paymentSettings":{"currencyCode":"GBP"},"myshopifyDomain":"sauce-demo.myshopify.com","countryCode":"GB","storefrontUrl":"https://sauce-demo.myshopify.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed", {});},"https://sauce-demo.myshopify.com/cdn","d2b96005wf43cf37dp5d0f4009ma6c36a7e",{"modern":"","legacy":""});&lt;/script&gt;<br/>
+  &lt;script async src="https://sauce-demo.myshopify.com/cdn/wpm/bd2b96005wf43cf37dp5d0f4009ma6c36a7em.js"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;window.ShopifyAnalytics = window.ShopifyAnalytics || {};<br/>
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};<br/>
+window.ShopifyAnalytics.meta.currency = 'GBP';<br/>
+var meta = {"page":{}};<br/>
+for (var attr in meta) {<br/>
+  window.ShopifyAnalytics.meta[attr] = meta[attr];<br/>
+}&lt;/script&gt;<br/>
+  &lt;script&gt;window.ShopifyAnalytics.merchantGoogleAnalytics = function() {<br/>
+  <br/>
+};<br/>
+&lt;/script&gt;<br/>
+  &lt;script class="analytics"&gt;(function () {<br/>
+    var customDocumentWrite = function(content) {<br/>
+      var jquery = null;<br/>
+<br/>
+      if (window.jQuery) {<br/>
+        jquery = window.jQuery;<br/>
+      } else if (window.Checkout && window.Checkout.$) {<br/>
+        jquery = window.Checkout.$;<br/>
+      }<br/>
+<br/>
+      if (jquery) {<br/>
+        jquery('body').append(content);<br/>
+      }<br/>
+    };<br/>
+<br/>
+    var hasLoggedConversion = function(token) {<br/>
+      if (token) {<br/>
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;<br/>
+      }<br/>
+      return false;<br/>
+    }<br/>
+<br/>
+    var setCookieIfConversion = function(token) {<br/>
+      if (token) {<br/>
+        var twoMonthsFromNow = new Date(Date.now());<br/>
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);<br/>
+<br/>
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;<br/>
+      }<br/>
+    }<br/>
+<br/>
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];<br/>
+    if (trekkie.integrations) {<br/>
+      return;<br/>
+    }<br/>
+    trekkie.methods = [<br/>
+      'identify',<br/>
+      'page',<br/>
+      'ready',<br/>
+      'track',<br/>
+      'trackForm',<br/>
+      'trackLink'<br/>
+    ];<br/>
+    trekkie.factory = function(method) {<br/>
+      return function() {<br/>
+        var args = Array.prototype.slice.call(arguments);<br/>
+        args.unshift(method);<br/>
+        trekkie.push(args);<br/>
+        return trekkie;<br/>
+      };<br/>
+    };<br/>
+    for (var i = 0; i &lt; trekkie.methods.length; i++) {<br/>
+      var key = trekkie.methods[i];<br/>
+      trekkie[key] = trekkie.factory(key);<br/>
+    }<br/>
+    trekkie.load = function(config) {<br/>
+      trekkie.config = config || {};<br/>
+      trekkie.config.initialDocumentCookie = document.cookie;<br/>
+      var first = document.getElementsByTagName('script')[0];<br/>
+      var script = document.createElement('script');<br/>
+      script.type = 'text/javascript';<br/>
+      script.onerror = function(e) {<br/>
+        var scriptFallback = document.createElement('script');<br/>
+        scriptFallback.type = 'text/javascript';<br/>
+        scriptFallback.onerror = function(error) {<br/>
+                var Monorail = {<br/>
+      produce: function produce(monorailDomain, schemaId, payload) {<br/>
+        var currentMs = new Date().getTime();<br/>
+        var event = {<br/>
+          schema_id: schemaId,<br/>
+          payload: payload,<br/>
+          metadata: {<br/>
+            event_created_at_ms: currentMs,<br/>
+            event_sent_at_ms: currentMs<br/>
+          }<br/>
+        };<br/>
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));<br/>
+      },<br/>
+      sendRequest: function sendRequest(endpointUrl, payload) {<br/>
+        // Try the sendBeacon API<br/>
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {<br/>
+          var blobData = new window.Blob([payload], {<br/>
+            type: 'text/plain'<br/>
+          });<br/>
+<br/>
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {<br/>
+            return true;<br/>
+          } // sendBeacon was not successful<br/>
+<br/>
+        } // XHR beacon<br/>
+<br/>
+        var xhr = new XMLHttpRequest();<br/>
+<br/>
+        try {<br/>
+          xhr.open('POST', endpointUrl);<br/>
+          xhr.setRequestHeader('Content-Type', 'text/plain');<br/>
+          xhr.send(payload);<br/>
+        } catch (e) {<br/>
+          console.log(e);<br/>
+        }<br/>
+<br/>
+        return false;<br/>
+      },<br/>
+      isIos12: function isIos12() {<br/>
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;<br/>
+      }<br/>
+    };<br/>
+    Monorail.produce('monorail-edge.shopifysvc.com',<br/>
+      'trekkie_storefront_load_errors/1.1',<br/>
+      {shop_id: 3991157,<br/>
+      theme_id: 7139093,<br/>
+      app_name: "storefront",<br/>
+      context_url: window.location.href,<br/>
+      source_url: "//sauce-demo.myshopify.com/cdn/s/trekkie.storefront.6790784e88524d17bc2df67c3d0c5047adb2d676.min.js"});<br/>
+<br/>
+        };<br/>
+        scriptFallback.async = true;<br/>
+        scriptFallback.src = '//sauce-demo.myshopify.com/cdn/s/trekkie.storefront.6790784e88524d17bc2df67c3d0c5047adb2d676.min.js';<br/>
+        first.parentNode.insertBefore(scriptFallback, first);<br/>
+      };<br/>
+      script.async = true;<br/>
+      script.src = '//sauce-demo.myshopify.com/cdn/s/trekkie.storefront.6790784e88524d17bc2df67c3d0c5047adb2d676.min.js';<br/>
+      first.parentNode.insertBefore(script, first);<br/>
+    };<br/>
+    trekkie.load(<br/>
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":3991157,"isMerchantRequest":null,"themeId":7139093,"themeCityHash":"7253583778835019478","contentLanguage":"en","currency":"GBP"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}<br/>
+    );<br/>
+<br/>
+    var loaded = false;<br/>
+    trekkie.ready(function() {<br/>
+      if (loaded) return;<br/>
+      loaded = true;<br/>
+<br/>
+      window.ShopifyAnalytics.lib = window.trekkie;<br/>
+<br/>
+  <br/>
+      var originalDocumentWrite = document.write;<br/>
+      document.write = customDocumentWrite;<br/>
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};<br/>
+      document.write = originalDocumentWrite;<br/>
+<br/>
+      window.ShopifyAnalytics.lib.page(null,{"shopifyEmitted":true});<br/>
+<br/>
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)<br/>
+      var token = match? match[1]: undefined;<br/>
+      if (!hasLoggedConversion(token)) {<br/>
+        setCookieIfConversion(token);<br/>
+        <br/>
+      }<br/>
+    });<br/>
+<br/>
+<br/>
+        var eventsListenerScript = document.createElement('script');<br/>
+        eventsListenerScript.async = true;<br/>
+        eventsListenerScript.src = "//sauce-demo.myshopify.com/cdn/shopifycloud/shopify/assets/shop_events_listener-bbbf3223c550be0dd72914a2fa06aaa88eb8943e96f9ea31fb63e7e27e0f97f4.js";<br/>
+        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);<br/>
+<br/>
+})();&lt;/script&gt;<br/>
+  &lt;script async src="//sauce-demo.myshopify.com/cdn/shopifycloud/shopify/assets/shop_events_listener-bbbf3223c550be0dd72914a2fa06aaa88eb8943e96f9ea31fb63e7e27e0f97f4.js"&gt;&lt;/script&gt;<br/>
+  &lt;script defer src="https://sauce-demo.myshopify.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-1.4.1.min.js" data-application="storefront-renderer" data-shop-id="3991157" data-render-region="gcp-us-east1" data-page-type="customers/register" data-theme-instance-id="7139093" data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10"&gt;&lt;/script&gt;<br/>
+  &lt;link rel="dns-prefetch preconnect" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/polyfills.I3JIKAFZ.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/app.BBTb1iUA.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/page-OnePage.DRRx1Mu1.js" crossorigin=""&gt;<br/>
+  &lt;script async="true" type="text/javascript" src="https://s.adroll.com/j/roundtrip.js"&gt;&lt;/script&gt;<br/>
+  &lt;meta http-equiv="origin-trial" content="A41wt2Lsq30A9Ox/WehogvJckPI4aY9RoSxhb8FMtVnqaUle1AtI6Yf7Wk+7+Wm0AfDDOkMX+Wn6wnDpBWYgWwYAAAB8eyJvcmlnaW4iOiJodHRwczovL2Fkcm9sbC5jb206NDQzIiwiZmVhdHVyZSI6IkludGVyZXN0Q29ob3J0QVBJIiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="&gt;<br/>
+  &lt;script type="text/javascript" src="https://s.adroll.com/j/pre/RLFWQFGQMZC2ZEMERYUQ34/GKTPKTIEIVDXDB73OLEF43/fpconsent.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://s.adroll.com/j/pre/RLFWQFGQMZC2ZEMERYUQ34/GKTPKTIEIVDXDB73OLEF43/index.js"&gt;&lt;/script&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/DeliveryMethodSelectorSection.ivOPzWQc.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/useEditorShopPayNavigation.BfbVV_45.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/VaultedPayment.Crdm6OCX.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/LocalizationExtensionField.QRMrB0m2.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/ShopPayOptInDisclaimer.Fy-wHjPH.js" crossorigin=""&gt;<br/>
+  &lt;script type="text/javascript" src="https://d.adroll.com/consent/check/RLFWQFGQMZC2ZEMERYUQ34?adroll_fpc=6b8fb61f97105698e208358964cfa304-1742401324928&amp;flg=1&amp;pv=46527837446.994865&amp;arrfrr=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fregister&amp;_s=1107e8cedd1435fdd96db2aa10e4d2f4&amp;_b=2"&gt;&lt;/script&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/UnavailableInBuyerLocationBanner.DQANmwWz.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/ShipmentBreakdown.AJ2rkTpn.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/use-show-shipment-breakdown._xgpGE_7.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/MerchandiseModal.30wyBwGa.js" crossorigin=""&gt;<br/>
+  &lt;script async="true" type="text/javascript" src="https://d.adroll.com/pixel/RLFWQFGQMZC2ZEMERYUQ34/GKTPKTIEIVDXDB73OLEF43?adroll_fpc=6b8fb61f97105698e208358964cfa304-1742401324928&amp;flg=1&amp;pv=46527837446.994865&amp;arrfrr=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fregister&amp;cookie=RLFWQFGQMZC2ZEMERYUQ34%3A1%7CGKTPKTIEIVDXDB73OLEF43%3A1%7CZEW3JXPLVRAQPNAKVX76KX%3A1&amp;adroll_s_ref=https%3A//sauce-demo.myshopify.com/&amp;keyw=&amp;p0=332&amp;xa4=1"&gt;&lt;/script&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body id="create-account" class="template-customers-register" style="zoom: 1;"&gt;<br/>
+  &lt;img src="https://ipv4.d.adroll.com/px4/RLFWQFGQMZC2ZEMERYUQ34/GKTPKTIEIVDXDB73OLEF43?adroll_fpc=6b8fb61f97105698e208358964cfa304-1742401324928&amp;flg=1&amp;pv=46527837446.994865&amp;arrfrr=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fregister&amp;cookie=RLFWQFGQMZC2ZEMERYUQ34%3A1%7CGKTPKTIEIVDXDB73OLEF43%3A1%7CZEW3JXPLVRAQPNAKVX76KX%3A1&amp;adroll_s_ref=https%3A//sauce-demo.myshopify.com/&amp;keyw=&amp;p0=332&amp;xa4=1" width="1" height="1" border="0" alt=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/PayButtonSection.NLm4NODY.js" crossorigin=""&gt;&lt;img src="https://x.adroll.com/attribution/trigger?fpc=6b8fb61f97105698e208358964cfa304&amp;advertisable_eid=RLFWQFGQMZC2ZEMERYUQ34&amp;conversion_type=PageView&amp;conversion_value=0.00&amp;currency=USC&amp;flg=1&amp;pv=46527837446.994865&amp;arrfrr=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fregister" width="1" height="1" border="0" alt=""&gt;<br/>
+  &lt;script type="text/javascript" src="https://s.adroll.com/pixel/RLFWQFGQMZC2ZEMERYUQ34/GKTPKTIEIVDXDB73OLEF43/ZEW3JXPLVRAQPNAKVX76KX.js"&gt;&lt;/script&gt;<br/>
+  &lt;div style="width: 1px; height: 1px; display: inline; position: absolute;"&gt;<br/>
+   &lt;img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/bombora/out?adroll_fpc=6b8fb61f97105698e208358964cfa304-1742401324928&amp;flg=1&amp;pv=46527837446.994865&amp;arrfrr=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fregister&amp;advertisable=RLFWQFGQMZC2ZEMERYUQ34"&gt;&lt;img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/experian/out?adroll_fpc=6b8fb61f97105698e208358964cfa304-1742401324928&amp;flg=1&amp;pv=46527837446.994865&amp;arrfrr=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fregister&amp;advertisable=RLFWQFGQMZC2ZEMERYUQ34"&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div style="width: 1px; height: 1px; display: inline; position: absolute;"&gt;&lt;/div&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/component-ShopPayVerificationSwitch.DyNF8biv.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/useSubscribeMessenger.ptI1c2rO.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/index.DZ4RPC1X.js" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/app.BlEx8mct.css" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/OnePage.PMX4OSBO.css" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/DeliveryMethodSelectorSection.DmqjTkNB.css" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/useEditorShopPayNavigation.DCOTvxC3.css" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/VaultedPayment.OxMVm7u-.css" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/use-show-shipment-breakdown.CKAakmU8.css" crossorigin=""&gt;<br/>
+  &lt;link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/ShopPayVerificationSwitch.DW7NMDXG.css" crossorigin=""&gt;<br/>
+  &lt;div id="cart-animation"&gt;<br/>
+   1<br/>
+  &lt;/div&gt;<br/>
+  &lt;div id="drawer"&gt;<br/>
+   &lt;div class="container"&gt;<br/>
+    &lt;div class="sixteen columns description"&gt;<br/>
+     &lt;p class="empty"&gt;Your cart is empty.&lt;/p&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;&lt;!--END DRAWER--&gt; &lt;!--START HEADER--&gt;<br/>
+  &lt;header&gt;&lt;!--START CONTAINER--&gt;<br/>
+   &lt;div class="container upper"&gt;&lt;!--START SIDEBAR--&gt;<br/>
+    &lt;div class="three columns product-search-wrapper"&gt;<br/>
+     &lt;div id="product-search"&gt;<br/>
+      &lt;form action="/search" method="get" class="search-form" role="search"&gt;&lt;input type="hidden" name="type" value="product"&gt; &lt;input type="submit" id="search-submit" class="icon "&gt; &lt;input class="search" placeholder="Search" name="q" type="text" id="search-field"&gt;<br/>
+      &lt;/form&gt;&lt;br class="clear"&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;&lt;!--END SIDEBAR--&gt; &lt;!--START TOP NAV--&gt;<br/>
+    &lt;div class="seven columns offset-by-one desktop"&gt;<br/>
+     &lt;nav&gt;&lt;a href="/search"&gt;Search&lt;/a&gt; &lt;a href="/pages/about-us"&gt;About Us&lt;/a&gt; &lt;a href="/account/login" id="customer_login_link"&gt;Log In&lt;/a&gt; &lt;a href="/account/register" id="customer_register_link"&gt;Sign up&lt;/a&gt;<br/>
+     &lt;/nav&gt;<br/>
+    &lt;/div&gt;&lt;!--END TOP NAV--&gt; &lt;!--START MINICART--&gt;<br/>
+    &lt;div class="five columns minicart-wrapper"&gt;<br/>
+     &lt;div id="minicart"&gt;<br/>
+      &lt;div class="sauce-app-profile"&gt;&lt;/div&gt;&lt;a href="#" class="toggle-drawer cart desktop "&gt;My Cart &lt;span id="cart-target-desktop" class="count cart-target"&gt;(0)&lt;/span&gt;&lt;/a&gt; &lt;a href="/cart" class="cart mobile  cart-target"&gt;My Cart &lt;span id="cart-target-mobile" class="count"&gt;(0)&lt;/span&gt;&lt;/a&gt; &lt;a href="/cart" class="checkout"&gt;Check Out&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;&lt;!--END MINI CART--&gt;<br/>
+   &lt;/div&gt;&lt;!--END CONTAINER--&gt; &lt;!--START CONTAINER--&gt;<br/>
+   &lt;div class="container lower"&gt;<br/>
+    &lt;div class="sixteen columns"&gt;<br/>
+     &lt;div class="table logo-tagline"&gt;<br/>
+      &lt;div class="table-cell"&gt;<br/>
+       &lt;h1 id="logo"&gt;&lt;a href="/"&gt; &lt;img src="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629" alt="Sauce Demo"&gt; &lt;/a&gt;&lt;/h1&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="table-cell"&gt;<br/>
+       &lt;div id="tagline" class="desktop"&gt;<br/>
+        &lt;h3&gt;Just a demo site showing off what Sauce can do.&lt;/h3&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/header&gt;&lt;!--START HEADER--&gt; &lt;!--START CONTAINER--&gt;<br/>
+  &lt;div class="container"&gt;&lt;!--START SIDEBAR--&gt;<br/>
+   &lt;div id="sidebar" class="three columns"&gt;<br/>
+    &lt;nav&gt;&lt;a href="#" id="toggle-menu" class="mobile"&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;<br/>
+     &lt;ul id="main-menu" class="accordion"&gt;<br/>
+      &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="/collections/all"&gt;Catalog&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="/blogs/news"&gt;Blog&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="/pages/about-us"&gt;About Us&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#sauce-show-wish-list"&gt;Wish list&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#sauce-show-refer-friend"&gt;Refer a friend&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li class="mobile"&gt;&lt;a href="/account/login" id="customer_login_link"&gt;Login&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li class="mobile"&gt;&lt;a href="/account/register" id="customer_register_link"&gt;Create account&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+     &lt;div id="social"&gt;&lt;a href="http://www.facebook.com/shopify" target="_blank" class="facebook "&gt;&lt;/a&gt; &lt;a href="http://www.twitter.com/sauce_io" target="_blank" class="twitter "&gt;&lt;/a&gt; &lt;a href="http://www.instagram.com/shopify" target="_blank" class="instagram "&gt;&lt;/a&gt; &lt;a href="http://www.pinterest.com/chrisjhoughton/awesome-facebook-integration/" target="_blank" class="pinterest "&gt;&lt;/a&gt; &lt;a href="/blogs/news.atom" target="_blank" class="rss "&gt;&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/nav&gt;<br/>
+   &lt;/div&gt;&lt;!--END SIDEBAR--&gt; &lt;!--START MAIN--&gt;<br/>
+   &lt;div id="main" class="twelve columns offset-by-one"&gt;<br/>
+    &lt;div id="page-content"&gt;&lt;!--START BREADCRUMB--&gt;<br/>
+     &lt;div id="breadcrumb" class="desktop"&gt;&lt;a href="/"&gt;Home&lt;/a&gt; — &lt;a href="#" class="active"&gt;Register&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="six columns alpha omega"&gt;<br/>
+      &lt;div id="create-account"&gt;<br/>
+       &lt;h1 class="accounts-title"&gt;Create Account&lt;/h1&gt;<br/>
+       &lt;form method="post" action="/account" id="create_customer" accept-charset="UTF-8" data-login-with-shop-sign-up="true" data-cptcha="true" data-hcaptcha-bound="true"&gt;<br/>
+        &lt;input type="hidden" name="form_type" value="create_customer"&gt;&lt;input type="hidden" name="utf8" value="✓"&gt;<br/>
+        &lt;div class="sauce-app-login-button" style="margin-bottom: 10px;"&gt;&lt;/div&gt;<br/>
+        &lt;div id="first_name" class="clearfix large_form"&gt;&lt;label for="first_name" class="login"&gt;First Name&lt;/label&gt; &lt;input type="text" value="" name="customer[first_name]" id="first_name" class="long" size="30"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div id="last_name" class="clearfix large_form"&gt;&lt;label for="last_name" class="login"&gt;Last Name&lt;/label&gt; &lt;input type="text" value="" name="customer[last_name]" id="last_name" class="long" size="30"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div id="email" class="clearfix large_form"&gt;&lt;label for="email" class="login"&gt;Email Address&lt;/label&gt; &lt;input type="email" value="" name="customer[email]" id="email" class="long" size="30"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div id="password" class="clearfix large_form"&gt;&lt;label for="password" class="login"&gt;Password&lt;/label&gt; &lt;input type="password" value="" name="customer[password]" id="password" class="long" size="30"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="action_bottom"&gt;&lt;input type="submit" value="Create"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="h-captcha" data-sitekey="f06e6c50-85a8-45c8-87d0-21a2b65856fe" data-size="invisible"&gt;<br/>
+         &lt;iframe aria-hidden="true" data-hcaptcha-widget-id="0rly5vo1ufk" data-hcaptcha-response="" src="https://newassets.hcaptcha.com/captcha/v1/14dbe0f1619b8014e2630bcdde727e7785a80dee/static/hcaptcha.html#frame=checkbox-invisible" style="display: none;"&gt;&lt;/iframe&gt;&lt;textarea id="h-captcha-response-0rly5vo1ufk" name="h-captcha-response" style="display: none;"&gt;&lt;/textarea&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/form&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;&lt;br class="clear"&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;&lt;!--END MAIN--&gt; &lt;br class="clear"&gt;&lt;!--START FOOTER--&gt;<br/>
+   &lt;footer&gt;<br/>
+    &lt;section class="upper"&gt;&lt;!--START NAV--&gt;<br/>
+     &lt;div class="three columns "&gt;<br/>
+      &lt;nav&gt;<br/>
+       &lt;h2&gt;Footer&lt;/h2&gt;&lt;a href="/search"&gt;Search&lt;/a&gt; &lt;br&gt;&lt;a href="/pages/about-us"&gt;About Us&lt;/a&gt;<br/>
+      &lt;/nav&gt;<br/>
+     &lt;/div&gt;&lt;!--END NAV--&gt; &lt;!--START PAGE CONTENT--&gt;<br/>
+     &lt;div class="eight offset-by-one columns"&gt;<br/>
+      &lt;div id="footer-content"&gt;<br/>
+       &lt;h2&gt;About Us&lt;/h2&gt;<br/>
+       &lt;div&gt;<br/>
+        &lt;p&gt;&lt;strong&gt;This is a demo site created for &lt;a href="http://sauceapp.io" title="Sauce"&gt;Sauce&lt;/a&gt;&lt;/strong&gt;, an awesome new way to make your Shopify site social. Sauce allows you to let&nbsp;&lt;span style="line-height: 1.5;"&gt;customers to share what they purchase to their friends, and s&lt;/span&gt;ee what their friends have purchased or "wanted" on your store.&lt;/p&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;&lt;!--END PAGE CONTENT--&gt; &lt;!--START MAILING LIST / OR CREDIT CARDS--&gt;<br/>
+     &lt;div class="three columns offset-by-one"&gt;<br/>
+      &lt;div id="payment-methods"&gt;&lt;img src="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/cc-amex.png?v=85206210438157468371394656065" alt="We accept Amex"&gt; &lt;img src="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/cc-visa.png?v=60401960785579442311394656066" alt="We accept Visa"&gt; &lt;img src="//sauce-demo.myshopify.com/cdn/shop/t/2/assets/cc-mastercard.png?v=163639441997642668931394656066" alt="We accept Mastercard"&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;&lt;!--END MAILING LIST / CREDIT CARDS--&gt; &lt;br class="clear"&gt;<br/>
+    &lt;/section&gt;<br/>
+    &lt;section class="lower"&gt;<br/>
+     &lt;div class="nine columns"&gt;<br/>
+      &lt;div class="legals"&gt;<br/>
+       Copyright © 2025 Sauce Demo. &lt;a target="_blank" rel="nofollow" href="https://www.shopify.co.uk/tour/shopping-cart?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore"&gt;Shopping Cart by Shopify&lt;/a&gt;.<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="six columns offset-by-one"&gt;<br/>
+      &lt;nav&gt;&lt;a href="/search" title="Search"&gt;Search&lt;/a&gt; &lt;a href="/pages/about-us" title="About Us"&gt;About Us&lt;/a&gt;<br/>
+      &lt;/nav&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/section&gt;&lt;br class="clear"&gt;<br/>
+   &lt;/footer&gt;&lt;!--END FOOTER--&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div tabindex="-1" aria-hidden="true" id="web-pixels-manager-sandbox-container" data-shopify-privacy="exclude" style="height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;"&gt;<br/>
+   &lt;iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-d2b96005wf43cf37dp5d0f4009ma6c36a7e" src="https://sauce-demo.myshopify.com/wpm@d2b96005wf43cf37dp5d0f4009ma6c36a7e/custom/web-pixel-shopify-custom-pixel@0402/sandbox/modern/account/register" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-d2b96005wf43cf37dp5d0f4009ma6c36a7e" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"&gt;&lt;/iframe&gt;<br/>
+  &lt;/div&gt;&lt;!-- END CONTAINER--&gt;<br/>
+  &lt;script&gt;(function() {<br/>
+var _fbq = window._fbq || (window._fbq = []);<br/>
+if (!_fbq.loaded) {<br/>
+var fbds = document.createElement('script');<br/>
+fbds.async = true;<br/>
+fbds.src = '//connect.facebook.net/en_US/fbds.js';<br/>
+var s = document.getElementsByTagName('script')[0];<br/>
+s.parentNode.insertBefore(fbds, s);<br/>
+_fbq.loaded = true;<br/>
+}<br/>
+_fbq.push(['addPixelId', '395560230629559']);<br/>
+})();<br/>
+window._fbq = window._fbq || [];<br/>
+window._fbq.push(['track', 'PixelInitialized', {}]);<br/>
+&lt;/script&gt;<br/>
+  &lt;noscript&gt;<br/>
+   &lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=395560230629559&amp;ev=PixelInitialized"&gt;<br/>
+  &lt;/noscript&gt;<br/>
+  &lt;script type="text/javascript"&gt;<br/>
+    adroll_adv_id = "RLFWQFGQMZC2ZEMERYUQ34";<br/>
+    adroll_pix_id = "GKTPKTIEIVDXDB73OLEF43";<br/>
+    (function () {<br/>
+        var _onload = function(){<br/>
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}<br/>
+            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}<br/>
+            var scr = document.createElement("script");<br/>
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");<br/>
+            scr.setAttribute('async', 'true');<br/>
+            scr.type = "text/javascript";<br/>
+            scr.src = host + "/j/roundtrip.js";<br/>
+            ((document.getElementsByTagName('head') || [null])[0] ||<br/>
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);<br/>
+        };<br/>
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}<br/>
+        else {window.attachEvent('onload', _onload)}<br/>
+    }());<br/>
+&lt;/script&gt;<br/>
+  &lt;script type="text/javascript"&gt;<br/>
+  (function() {<br/>
+    window._pa = window._pa || {};<br/>
+    // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions<br/>
+    // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions<br/>
+    // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads<br/>
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;<br/>
+    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/55f0a404808337080a0001ab.js";<br/>
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);<br/>
+  })();<br/>
+&lt;/script&gt;&lt;iframe id="adroll_slg" src="https://x.adroll.com/pxl/iframe_content.html?adroll_fpc=6b8fb61f97105698e208358964cfa304-1742401324928&amp;flg=1&amp;pv=46527837446.994865&amp;arrfrr=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fregister&amp;advertisable=RLFWQFGQMZC2ZEMERYUQ34" title="no readable content" frameborder="0" marginwidth="0" marginheight="0" allow="join-ad-interest-group" style="position: absolute; width: 0px; height: 0px; border: 0px; padding: 0px; margin: 0px 0px 0px -1000px;"&gt;&lt;/iframe&gt;<br/>
+  &lt;script id="captcha-provider" async src="https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="https://js.hcaptcha.com/1/api.js?render=explicit&amp;recaptchacompat=off&amp;onload=__shopify_hcap_load_4xdca9zr" async defer&gt;&lt;/script&gt;<br/>
+  &lt;div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(215, 215, 215); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px; border-radius: 4px; left: 137px; top: 225.5px; z-index: 2147483647; position: absolute; pointer-events: auto; transition: opacity 0.15s ease-out; opacity: 1; visibility: visible; display: block;"&gt;<br/>
+   &lt;div style="position: relative; z-index: 1; width: 520px; height: 530px;"&gt;<br/>
+    &lt;iframe src="https://newassets.hcaptcha.com/captcha/v1/14dbe0f1619b8014e2630bcdde727e7785a80dee/static/hcaptcha.html#frame=challenge&amp;id=0rly5vo1ufk&amp;host=sauce-demo.myshopify.com&amp;sentry=true&amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.com&amp;recaptchacompat=off&amp;custom=false&amp;hl=es&amp;tplinks=on&amp;pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&amp;sitekey=f06e6c50-85a8-45c8-87d0-21a2b65856fe&amp;size=invisible&amp;theme=light&amp;origin=https%3A%2F%2Fsauce-demo.myshopify.com" frameborder="0" scrolling="no" allow="private-state-token-issuance 'src'; private-state-token-redemption 'src'" title="Contenido principal del desafío hCaptcha" style="border: 0px; z-index: 2000000000; position: relative; width: 520px; height: 530px;"&gt;&lt;/iframe&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div style="width: 100%; height: 100%; position: fixed; pointer-events: auto; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05; cursor: pointer;"&gt;&lt;/div&gt;<br/>
+   &lt;div style="border-width: 11px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 1; right: 100%; top: 10px;"&gt;<br/>
+    &lt;div style="border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1; display: none;"&gt;&lt;/div&gt;<br/>
+    &lt;div style="border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0; display: none;"&gt;&lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div id="shop-hcaptcha-badge-container"&gt;<br/>
+   &lt;img width="44" src="data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220%22%20y%3D%220%22%20viewBox%3D%220%200%20482.3%20482.3%22%20style%3D%22enable-background%3Anew%200%200%20482.3%20482.3%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%3E.st0%2C.st2%2C.st3%7Bfill%3A%231074bc%3Bopacity%3A.5%3Benable-background%3Anew%7D.st2%2C.st3%7Bopacity%3A.7%3Bfill%3A%230c82bf%7D.st3%7Bopacity%3A.8%7D.st5%7Bopacity%3A.5%3Bfill%3A%23048fbf%7D.st5%2C.st6%2C.st8%7Benable-background%3Anew%7D.st6%7Bfill%3A%23048fbf%3Bopacity%3A.8%7D.st8%7Bopacity%3A.7%7D.st8%2C.st9%7Bfill%3A%23019ec0%7D.st10%7Bopacity%3A.7%3Benable-background%3Anew%7D.st10%2C.st11%7Bfill%3A%2300abbf%7D.st12%2C.st13%2C.st15%2C.st16%2C.st18%7Benable-background%3Anew%3Bopacity%3A.5%3Bfill%3A%2302b8be%7D.st13%2C.st15%2C.st16%2C.st18%7Bopacity%3A.8%7D.st15%2C.st16%2C.st18%7Bopacity%3A.7%3Bfill%3A%2331bdba%7D.st16%2C.st18%7Bopacity%3A.8%7D.st18%7Bopacity%3A.5%3Bfill%3A%2347c0b4%7D%3C%2Fstyle%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M301.5%20422h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20d%3D%22M241.2%20422h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3z%22%20style%3D%22enable-background%3Anew%3Bopacity%3A.7%3Bfill%3A%231074bc%22%2F%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M120.6%20422h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st2%22%20d%3D%22M361.8%20361.8h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st3%22%20d%3D%22M301.5%20361.8h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20d%3D%22M241.2%20361.8h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3z%22%20style%3D%22fill%3A%230c82bf%22%2F%3E%0A%3Cpath%20class%3D%22st3%22%20d%3D%22M120.6%20361.8h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st2%22%20d%3D%22M60.3%20361.8h60.3v60.3H60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st5%22%20d%3D%22M422%20301.5h60.3v60.3H422z%22%2F%3E%0A%3Cpath%20class%3D%22st6%22%20d%3D%22M361.8%20301.5h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20d%3D%22M301.5%20301.5h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3z%22%20style%3D%22fill%3A%23048fbf%22%2F%3E%0A%3Cpath%20class%3D%22st6%22%20d%3D%22M60.3%20301.5h60.3v60.3H60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st5%22%20d%3D%22M0%20301.5h60.3v60.3H0z%22%2F%3E%0A%3Cpath%20class%3D%22st8%22%20d%3D%22M422%20241.2h60.3v60.3H422z%22%2F%3E%0A%3Cpath%20class%3D%22st9%22%20d%3D%22M361.8%20241.2h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st9%22%20d%3D%22M60.3%20241.2h60.3v60.3H60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st8%22%20d%3D%22M0%20241.2h60.3v60.3H0z%22%2F%3E%0A%3Cpath%20class%3D%22st10%22%20d%3D%22M422%20180.9h60.3v60.3H422z%22%2F%3E%0A%3Cpath%20class%3D%22st11%22%20d%3D%22M361.8%20180.9h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st11%22%20d%3D%22M60.3%20180.9h60.3v60.3H60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st10%22%20d%3D%22M0%20180.9h60.3v60.3H0z%22%2F%3E%0A%3Cpath%20class%3D%22st12%22%20d%3D%22M422%20120.6h60.3v60.3H422z%22%2F%3E%0A%3Cpath%20class%3D%22st13%22%20d%3D%22M361.8%20120.6h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20d%3D%22M301.5%20120.6h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3z%22%20style%3D%22fill%3A%2302b8be%22%2F%3E%0A%3Cpath%20class%3D%22st13%22%20d%3D%22M60.3%20120.6h60.3v60.3H60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st12%22%20d%3D%22M0%20120.6h60.3v60.3H0z%22%2F%3E%0A%3Cpath%20class%3D%22st15%22%20d%3D%22M361.8%2060.3h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st16%22%20d%3D%22M301.5%2060.3h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20d%3D%22M241.2%2060.3h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3z%22%20style%3D%22fill%3A%2331bdba%22%2F%3E%0A%3Cpath%20class%3D%22st16%22%20d%3D%22M120.6%2060.3h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st15%22%20d%3D%22M60.3%2060.3h60.3v60.3H60.3z%22%2F%3E%0A%3Cpath%20class%3D%22st18%22%20d%3D%22M301.5%200h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20d%3D%22M241.2%200h60.3v60.3h-60.3zm-60.3%200h60.3v60.3h-60.3z%22%20style%3D%22opacity%3A.7%3Bfill%3A%2347c0b4%3Benable-background%3Anew%22%2F%3E%0A%3Cpath%20class%3D%22st18%22%20d%3D%22M120.6%200h60.3v60.3h-60.3z%22%2F%3E%0A%3Cpath%20d%3D%22m158.8%20222.1%2016.8-37.6c6.1-9.6%205.3-21.4-1.4-28.1-.9-.9-1.9-1.7-2.9-2.4-4.7-2.9-10.3-3.5-15.5-1.8-5.8%201.8-10.8%205.7-14%2010.8%200%200-23%2053.7-31.6%2077.8S105%20309.2%20138%20342.3c35%2035%2085.7%2043%20118%2018.7%201.4-.7%202.6-1.5%203.8-2.5l99.6-83.2c4.8-4%2012-12.2%205.6-21.6-6.3-9.2-18.1-2.9-23%20.2l-57.3%2041.7c-1.1.9-2.7.8-3.6-.3%200%200%200-.1-.1-.1-1.5-1.8-1.7-6.5.6-8.4l87.9-74.6c7.6-6.8%208.6-16.8%202.5-23.6-6-6.7-15.5-6.5-23.2.4l-79.1%2061.9c-1.5%201.2-3.7%201-4.9-.5%200-.1-.1-.1-.1-.2-1.6-1.8-2.2-4.7-.4-6.5l89.6-86.9c7.1-6.6%207.5-17.7.9-24.7-3.2-3.3-7.6-5.2-12.2-5.2-4.7-.1-9.2%201.7-12.6%205l-91.6%2086c-2.2%202.2-6.5%200-7-2.6-.2-.9.1-1.9.8-2.6l70.1-79.8c7-6.5%207.4-17.4.9-24.4s-17.4-7.4-24.4-.9c-.3.3-.6.5-.8.8L171.5%20225.9c-3.8%203.8-9.4%204-12.1%201.8-1.7-1.3-2-3.8-.6-5.6z%22%20style%3D%22fill%3A%23fff%22%2F%3E%0A%3C%2Fsvg%3E" alt="Protected by hCaptcha"&gt;<br/>
+   &lt;div class="info"&gt;<br/>
+    &lt;span&gt;Protected by hCaptcha&lt;/span&gt;<br/>
+    &lt;ul class="links"&gt;<br/>
+     &lt;li&gt;&lt;a href="https://hcaptcha.com/privacy" target="_blank" class="privacy"&gt;Privacy&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="https://hcaptcha.com/terms" target="_blank" class="terms"&gt;Terms&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

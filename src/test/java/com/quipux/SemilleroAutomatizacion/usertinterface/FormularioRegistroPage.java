@@ -19,4 +19,7 @@ public class FormularioRegistroPage {
 
     public final static Target BTN_SUBMIT = Target.the("Boton para hacer registrase")
             .locatedBy("//input[@value='Create']");
+
+    public final static Target IFRAME_CAPCHA = Target.the("Iframe del capcha ")
+            .locatedBy("//iframe[contains(@title, 'hCaptcha')]");
 }

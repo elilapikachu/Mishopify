@@ -10,4 +10,6 @@ public class HomeMyShopifyPage {
     public final static Target OPTION_REGISTRO = Target.the("Opcion para poder ingresar al formulario de registro")
             .located(By.id("customer_register_link"));
 
+
+
 }

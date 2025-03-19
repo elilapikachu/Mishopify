@@ -128,7 +128,7 @@
             <span class="breadcrumbs">
                 <a href="index.html">Home</a>
                 > <span class="truncate-40"><a
-                    href="6c2772b1e56d055d8daac388e6a45451c0ac0d27cb19662d74cf755b4712cbbe.html">En El Portal De Shopify Me Registro Como Un Nuevo Usuario</a></span>
+                    href="6c2772b1e56d055d8daac388e6a45451c0ac0d27cb19662d74cf755b4712cbbe.html">En El Portal De Shopify Verifico Que Aparezca El Capcha Cuando Detecte Un Bot</a></span>
                 > <span class="truncate-60"><a
                     href="2bab3be3a8c413a8429b78a6592b6d454d2fc46dd64237505a129b5fc3adefb2.html">Registro nuevo usuario </a></span>
                 > Screenshots
@@ -152,7 +152,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-03-2025 10:48</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-03-2025 11:40</span>
     <br style="clear:left"/>
 </div>
 
@@ -168,7 +168,7 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
-                                    <span class="story-header-title">En El Portal De Shopify Me Registro Como Un Nuevo Usuario </span>
+                                    <span class="story-header-title">En El Portal De Shopify Verifico Que Aparezca El Capcha Cuando Detecte Un Bot </span>
                                     <span class="badge tag-badge" style="">Feature</span>
                                 </h3>
 
@@ -187,7 +187,7 @@
                             </p>
                             <p class="tag">
                                 <span class="badge tag-badge" style="background:default;"
-                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="34658a1663fcf042bd7acb3325affbe4e647c8acd84d0228be2f52e1381e61b9.html">10 To 30 Seconds
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="2a5b6a7be0f08df02d8ab0b4d4c68648c2695c6c7ef0658c71de4d42b1415b18.html">Under 1 Second
                                         (Duration)
                                 </a>
                                 </span>
@@ -200,9 +200,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Registro nuevo usuario
+                                <span class="failing-color">Registro nuevo usuario
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -223,15 +223,50 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expecting Opcion para poder ingresar al formulario de registro that is displayedBut got: web element is not displayed</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)<br />net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)<br />net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)<br />net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)<br />net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)<br />net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)<br />com.quipux.SemilleroAutomatizacion.tasks.VerificarVerOpcion.lambda$luegoDeregistrarse$0(VerificarVerOpcion.java:14)<br />net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)<br />net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)<br />net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)<br />net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)<br />net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)<br />net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)<br />com.quipux.SemilleroAutomatizacion.stepdefinitions.RegistroStepDefinitions.debo_de_estar_registrado_y_lo_confirmo_viendo_la_seccion_de(RegistroStepDefinitions.java:32)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:332)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:53)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="b425ff5ffb565373aa16aa86a168a38f8d070b158b1d98331c7e54ecb7982080.png" title=" 1: Registro nuevo usuario ({nombre=Elizabeth, apellido=cardona, correo=eliza123@gmail.com, contrasena=soyTurron983})" width="0"/>
-                <img src="b425ff5ffb565373aa16aa86a168a38f8d070b158b1d98331c7e54ecb7982080.png" title=" Karen inicia el navegador y navega a la pagina" width="0"/>
-                <img src="b425ff5ffb565373aa16aa86a168a38f8d070b158b1d98331c7e54ecb7982080.png" title=" Karen opens the browser at https://sauce-demo.myshopify.com/" width="0"/>
-                <img src="b425ff5ffb565373aa16aa86a168a38f8d070b158b1d98331c7e54ecb7982080.png" title=" Karen inicia el navegador y navega a la pagina (completed)" width="0"/>
+                <img src="61aaacdf3130224a42bb3ecd218fa5e3712b45d6c7944c08dd003bcfd2bc86c7.png" title=" 1: Registro nuevo usuario ({nombre=Elizabeth, apellido=cardona, correo=eliza123@gmail.com, contrasena=soyTurron983})" width="0"/>
+                <img src="61aaacdf3130224a42bb3ecd218fa5e3712b45d6c7944c08dd003bcfd2bc86c7.png" title=" Karen inicia el navegador y navega a la pagina" width="0"/>
+                <img src="61aaacdf3130224a42bb3ecd218fa5e3712b45d6c7944c08dd003bcfd2bc86c7.png" title=" Karen opens the browser at https://sauce-demo.myshopify.com/" width="0"/>
+                <img src="61aaacdf3130224a42bb3ecd218fa5e3712b45d6c7944c08dd003bcfd2bc86c7.png" title=" Karen inicia el navegador y navega a la pagina (completed)" width="0"/>
                 <img src="b425ff5ffb565373aa16aa86a168a38f8d070b158b1d98331c7e54ecb7982080.png" title=" Dado que me encuentro en el formulario de registro" width="0"/>
+                <img src="b425ff5ffb565373aa16aa86a168a38f8d070b158b1d98331c7e54ecb7982080.png" title=" Karen navega al formulario de registro" width="0"/>
                 <img src="b425ff5ffb565373aa16aa86a168a38f8d070b158b1d98331c7e54ecb7982080.png" title=" Karen clicks on Opcion para poder ingresar al formulario de registro" width="0"/>
                 <img src="604d85befc680c612375a0d4adf9e18f7975d2145615a0f4d265b232b6588eb5.png" title=" Karen clicks on Opcion para poder ingresar al formulario de registro (completed)" width="0"/>
+                <img src="604d85befc680c612375a0d4adf9e18f7975d2145615a0f4d265b232b6588eb5.png" title=" Karen navega al formulario de registro (completed)" width="0"/>
                 <img src="604d85befc680c612375a0d4adf9e18f7975d2145615a0f4d265b232b6588eb5.png" title=" Dado que me encuentro en el formulario de registro (completed)" width="0"/>
                 <img src="604d85befc680c612375a0d4adf9e18f7975d2145615a0f4d265b232b6588eb5.png" title=" Cuando lleno los datos Elizabeth cardona eliza123@gmail.com y soyTurron983 luego le doy al boton de registrar" width="0"/>
                 <img src="604d85befc680c612375a0d4adf9e18f7975d2145615a0f4d265b232b6588eb5.png" title=" Karen ingresa al formulario de registro" width="0"/>
@@ -240,15 +275,18 @@
                 <img src="289095c0b704d8a5d091064a14e2316bfdf031071bc430f299ec87cd43afdf89.png" title=" Karen enters 'cardona' into Input para ingresar el apellido" width="0"/>
                 <img src="90f707b149e2dd53cd411eb3df1590988397a0716cfee8fd4f74e8eb143564c9.png" title=" Karen enters 'cardona' into Input para ingresar el apellido (completed)" width="0"/>
                 <img src="90f707b149e2dd53cd411eb3df1590988397a0716cfee8fd4f74e8eb143564c9.png" title=" Karen enters 'eliza123@gmail.com' into Input para ingresar el correo" width="0"/>
-                <img src="ce7171b9da5eba479f1759a2ee43d8e458125e8a081368d892fda77cad0bb119.png" title=" Karen enters 'eliza123@gmail.com' into Input para ingresar el correo (completed)" width="0"/>
-                <img src="ce7171b9da5eba479f1759a2ee43d8e458125e8a081368d892fda77cad0bb119.png" title=" Karen enters 'soyTurron983' into Input para ingresar la contrase&ntilde;a" width="0"/>
-                <img src="9146d582b31d04db3c0afc882e4127f65efcda4096e2cd03aae5f01b4666e66d.png" title=" Karen enters 'soyTurron983' into Input para ingresar la contrase&ntilde;a (completed)" width="0"/>
-                <img src="9146d582b31d04db3c0afc882e4127f65efcda4096e2cd03aae5f01b4666e66d.png" title=" Karen clicks on Boton para hacer registrase" width="0"/>
-                <img src="a77b31080def6868c42fad6cc7a1494d0db1054cf1721cb2038f4328b6e6018b.png" title=" Karen clicks on Boton para hacer registrase (completed)" width="0"/>
-                <img src="a77b31080def6868c42fad6cc7a1494d0db1054cf1721cb2038f4328b6e6018b.png" title=" Karen ingresa al formulario de registro (completed)" width="0"/>
-                <img src="a77b31080def6868c42fad6cc7a1494d0db1054cf1721cb2038f4328b6e6018b.png" title=" Cuando lleno los datos Elizabeth cardona eliza123@gmail.com y soyTurron983 luego le doy al boton de registrar (completed)" width="0"/>
+                <img src="a682456b7da436b1157d32c7362b63337eb8084d7ff793f72399cb9f290e32fc.png" title=" Karen enters 'eliza123@gmail.com' into Input para ingresar el correo (completed)" width="0"/>
+                <img src="a682456b7da436b1157d32c7362b63337eb8084d7ff793f72399cb9f290e32fc.png" title=" Karen enters 'soyTurron983' into Input para ingresar la contrase&ntilde;a" width="0"/>
+                <img src="6d394ba09ace4963be8d125a6aa02e09937ca4e575b40344d383c28f43aaff54.png" title=" Karen enters 'soyTurron983' into Input para ingresar la contrase&ntilde;a (completed)" width="0"/>
+                <img src="6d394ba09ace4963be8d125a6aa02e09937ca4e575b40344d383c28f43aaff54.png" title=" Karen clicks on Boton para hacer registrase" width="0"/>
+                <img src="dfc66b578031523b88d3db9d01966c6e0d416c9959f53dcc7a73b14c8b37b4fc.png" title=" Karen clicks on Boton para hacer registrase (completed)" width="0"/>
+                <img src="dfc66b578031523b88d3db9d01966c6e0d416c9959f53dcc7a73b14c8b37b4fc.png" title=" Karen ingresa al formulario de registro (completed)" width="0"/>
+                <img src="dfc66b578031523b88d3db9d01966c6e0d416c9959f53dcc7a73b14c8b37b4fc.png" title=" Cuando lleno los datos Elizabeth cardona eliza123@gmail.com y soyTurron983 luego le doy al boton de registrar (completed)" width="0"/>
+                <img src="dfc66b578031523b88d3db9d01966c6e0d416c9959f53dcc7a73b14c8b37b4fc.png" title=" Entonces debo de estar registrado y lo confirmo viendo la seccion de 'My Account'" width="0"/>
+                <img src="dfc66b578031523b88d3db9d01966c6e0d416c9959f53dcc7a73b14c8b37b4fc.png" title=" Karen verifica que se registro exitosamente visualizando la opci&oacute;n de mi perfil" width="0"/>
+                <img src="dfc66b578031523b88d3db9d01966c6e0d416c9959f53dcc7a73b14c8b37b4fc.png" title=" Karen should see Opcion para poder ingresar al formulario de registro that is displayed" width="0"/>
 
-                <img src="a77b31080def6868c42fad6cc7a1494d0db1054cf1721cb2038f4328b6e6018b.png" title=" Entonces debo de estar registrado y lo confirmo viendo la seccion de 'My Account': <span class='success-color'>SUCCESS</span>" width="0"/>
+                <img src="aca661328e7fa4f3dca96c3cd6e3062f6794111f0eed5cc1d63615e135e783e3.png" title=" Karen should see Opcion para poder ingresar al formulario de registro that is displayed (completed): <span class='failing-color'>FAILURE</span>" width="0"/>
             </div>
         </div>
 
