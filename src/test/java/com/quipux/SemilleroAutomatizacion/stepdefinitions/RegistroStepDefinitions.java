@@ -1,5 +1,6 @@
 package com.quipux.SemilleroAutomatizacion.stepdefinitions;
 
+import com.quipux.SemilleroAutomatizacion.tasks.LlenarDatos;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
@@ -20,7 +21,7 @@ public class RegistroStepDefinitions {
     @Cuando("lleno los datos {} {} {} y {} luego le doy al boton de registrar")
     public void llenoLosDatosYLuegoLeDoyAlBotonDeRegistrar(String nombre, String apellido, String correo, String contrasena) {
         theActorInTheSpotlight().attemptsTo(
-
+                LlenarDatos.enElFormularioDeRegistro(nombre, apellido, correo, contrasena)
         );
     }
 
