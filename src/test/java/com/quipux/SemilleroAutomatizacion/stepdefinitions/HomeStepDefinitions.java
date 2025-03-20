@@ -2,6 +2,7 @@ package com.quipux.SemilleroAutomatizacion.stepdefinitions;
 
 import com.quipux.SemilleroAutomatizacion.tasks.DarEnter;
 import com.quipux.SemilleroAutomatizacion.tasks.IngresarElementoABuscar;
+import com.quipux.SemilleroAutomatizacion.tasks.VerificoResultado;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
@@ -22,11 +23,11 @@ public class HomeStepDefinitions {
                 DarEnter.enELbuscador()
         );
     }
-    @Entonces("deben aparecer uno o varios resultados y verifico que el resultado contenga la palabra Grey en el")
-    public void debenAparecerUnoOVariosResultadosYVerificoQueElResultadoContengaLaPalabraGreyEnEl() {
-        theActorInTheSpotlight().attemptsTo(
 
+    @Entonces("deben aparecer uno o varios resultados y verifico que el resultado contenga la palabra '{}' en el")
+    public void debenAparecerUnoOVariosResultadosYVerificoQueElResultadoContengaLaPalabraEnEl(String busqueda) {
+        theActorInTheSpotlight().attemptsTo(
+                VerificoResultado.deLaBusqueda(busqueda)
         );
     }
-
 }
