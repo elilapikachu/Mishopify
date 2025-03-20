@@ -1,11 +1,10 @@
 #language:es
-
-  @creaNuevoUsuario
-  Característica: En el portal de Shopify me registro como un nuevo usuario
-    Esquema del escenario: Registro nuevo usuario
+  @Aparicioncapcha
+  Característica: En el portal de Shopify verifico que aparezca el capcha cuando detecte un bot
+    Esquema del escenario: verifico aparicion del capcha
     Dado que me encuentro en el formulario de registro
-    Cuando lleno los datos <nombre> <apellido> <correo> y <contrsena> luego le doy al boton de registrar
-    Entonces debo de estar registrado y lo confirmo viendo la seccion de 'My Account'
+    Cuando lleno los datos <nombre> <apellido> <correo> y <contrasena> luego le doy al boton de registrar
+    Entonces debe de aparecer el chapcha evitando el registro
 
     Ejemplos:
       | nombre    | apellido | correo             | contrasena   |
