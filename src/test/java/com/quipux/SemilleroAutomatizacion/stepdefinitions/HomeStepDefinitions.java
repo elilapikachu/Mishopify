@@ -3,6 +3,7 @@ package com.quipux.SemilleroAutomatizacion.stepdefinitions;
 import com.quipux.SemilleroAutomatizacion.tasks.DarEnter;
 import com.quipux.SemilleroAutomatizacion.tasks.IngresarElementoABuscar;
 import com.quipux.SemilleroAutomatizacion.tasks.VerificoResultado;
+import com.quipux.SemilleroAutomatizacion.tasks.VerificoTexto;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
@@ -28,6 +29,13 @@ public class HomeStepDefinitions {
     public void debenAparecerUnoOVariosResultadosYVerificoQueElResultadoContengaLaPalabraEnEl(String busqueda) {
         theActorInTheSpotlight().attemptsTo(
                 VerificoResultado.deLaBusqueda(busqueda)
+        );
+    }
+
+    @Entonces("deben aparecer el mensaje '{}' indicando que no se encontro el resultado deseado")
+    public void debenAparecerElMensajeNoResultsFoundForIndicandoQueNoSeEncontroElResultadoDeseado(String mensaje) {
+        theActorInTheSpotlight().attemptsTo(
+                VerificoTexto.deLaBusqueda(mensaje)
         );
     }
 }
