@@ -10,4 +10,7 @@ public class ArticuloPage {
     public final static Target FILA_ARTICULO = Target.the("Fila que muestra la información sobre el articulo en el carrito")
             .locatedBy("//div[@class='row first']");
 
+    public final static Target REMOVER_ARTICULO = Target.the("A para remover el articulo del carro de compras")
+            .locatedBy("//a[@class='removeLine']");
+
 }

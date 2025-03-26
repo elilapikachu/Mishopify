@@ -32,4 +32,22 @@ public class CarritoDeComprasStepDefinitions {
                 VerificarArticulo.enelCarrito()
         );
     }
+
+    @Dado("que hay un articulo en el carrito de compras")
+    public void queHayUnArticuloEnElCarritoDeCompras() {
+        queMeEncuentroEnLaInformacionDelPrimeroArticulo();
+        leDoyClickAlBotonDeAgregarAlCarrito();
+    }
+    @Cuando("me meto al carrito y le doy a eliminar articulo")
+    public void meMetoAlCarritoYLeDoyAEliminarArticulo() {
+        theActorInTheSpotlight().attemptsTo(
+
+        );
+    }
+    @Entonces("el carrito debe quedar vacio")
+    public void elCarritoDebeQuedarVacio() {
+        theActorInTheSpotlight().attemptsTo(
+
+        );
+    }
 }
