@@ -1,16 +1,18 @@
 package com.quipux.SemilleroAutomatizacion.stepdefinitions;
 
-import com.quipux.SemilleroAutomatizacion.tasks.DarEnter;
+import com.quipux.SemilleroAutomatizacion.interactions.DarEnter;
 import com.quipux.SemilleroAutomatizacion.tasks.IngresarElementoABuscar;
 import com.quipux.SemilleroAutomatizacion.tasks.VerificoResultado;
-import com.quipux.SemilleroAutomatizacion.tasks.VerificoTexto;
+import com.quipux.SemilleroAutomatizacion.interactions.VerificoTexto;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 
+import static com.quipux.SemilleroAutomatizacion.usertinterface.HomeMyShopifyPage.INPUT_BUSCADOR;
+import static com.quipux.SemilleroAutomatizacion.usertinterface.ResultadosPage.TEXTO_NO_RESULTADO;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-public class HomeStepDefinitions {
+public class BusquedaStepDefinitions {
 
     @Dado("que ingreso la palabra '{}' en el buscador de la pagina Home")
     public void queIngresoLaPalabraEnElBuscadorDeLaPaginaHome(String busqueda) {
@@ -21,7 +23,7 @@ public class HomeStepDefinitions {
     @Cuando("realizo la busqueda")
     public void realizoLaBusqueda() {
         theActorInTheSpotlight().attemptsTo(
-                DarEnter.enELbuscador()
+                DarEnter.enElElemento(INPUT_BUSCADOR)
         );
     }
 
@@ -35,7 +37,7 @@ public class HomeStepDefinitions {
     @Entonces("deben aparecer el mensaje '{}' indicando que no se encontro el resultado deseado")
     public void debenAparecerElMensajeNoResultsFoundForIndicandoQueNoSeEncontroElResultadoDeseado(String mensaje) {
         theActorInTheSpotlight().attemptsTo(
-                VerificoTexto.deLaBusqueda(mensaje)
+                VerificoTexto.visibleEnLaPagina(mensaje, TEXTO_NO_RESULTADO)
         );
     }
 }

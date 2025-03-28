@@ -4,7 +4,7 @@
     Esquema del escenario: verifico aparicion del capcha
     Dado que me encuentro en el formulario de registro
     Cuando lleno los datos <nombre> <apellido> <correo> y <contrasena> luego le doy al boton de registrar
-    Entonces debe de aparecer el chapcha evitando el registro
+    Entonces debe de aparecer el capcha como medida de seguridad
 
     Ejemplos:
       | nombre    | apellido | correo             | contrasena   |

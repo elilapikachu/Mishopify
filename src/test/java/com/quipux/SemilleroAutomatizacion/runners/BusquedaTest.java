@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(plugin = {"pretty"},
-        features = "src/test/resources/features/home.feature",
+        features = "src/test/resources/features/busqueda.feature",
         glue = {"com.quipux.SemilleroAutomatizacion"},
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class HomeTest {
+public class BusquedaTest {
 }

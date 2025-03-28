@@ -2,6 +2,7 @@ package com.quipux.SemilleroAutomatizacion.tasks;
 
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.ensure.Ensure;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static com.quipux.SemilleroAutomatizacion.usertinterface.ResultadosPage.RESULTADOS_BUSQUEDA;
@@ -14,8 +15,7 @@ public class VerificoResultado {
                 actor -> {
                     actor.attemptsTo(
                             WaitUntil.the(RESULTADOS_BUSQUEDA, isVisible()),
-                            WaitUntil.the(TEXTO_BUSQUEDA.of(busqueda), isVisible())
-
+                            Ensure.that(TEXTO_BUSQUEDA.of(busqueda)).isDisplayed()
 
                     );
                 }
