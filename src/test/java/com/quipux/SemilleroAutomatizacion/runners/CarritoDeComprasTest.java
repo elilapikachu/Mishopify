@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/carrito_de_compras.feature",
         glue = {"com.quipux.SemilleroAutomatizacion"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@RemoverArticulo"
+        tags = "@AgregarArticulo"
 )
 public class CarritoDeComprasTest {
 

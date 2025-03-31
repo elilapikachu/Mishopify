@@ -5,10 +5,12 @@ import com.quipux.SemilleroAutomatizacion.interactions.TiempoDeEspera;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.ensure.Ensure;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static com.quipux.SemilleroAutomatizacion.usertinterface.ArticuloPage.FILA_ARTICULO;
 import static com.quipux.SemilleroAutomatizacion.usertinterface.HomeMyShopifyPage.A_CARRITO;
+import static com.quipux.SemilleroAutomatizacion.usertinterface.ResultadosPage.TEXTO_BUSQUEDA;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class VerificarArticulo {
@@ -20,7 +22,8 @@ public class VerificarArticulo {
                             RecargarPagina.paraPoderSeguirNavegando(),
                             TiempoDeEspera.enLaPagina(2000),
                             Click.on(A_CARRITO),
-                            WaitUntil.the(FILA_ARTICULO, isVisible())
+                            WaitUntil.the(FILA_ARTICULO, isVisible()),
+                            Ensure.that(FILA_ARTICULO).isDisplayed()
 
                     );
                 }

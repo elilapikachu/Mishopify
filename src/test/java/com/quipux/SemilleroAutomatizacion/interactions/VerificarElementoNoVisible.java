@@ -11,6 +11,7 @@ public class VerificarElementoNoVisible {
         return Task.where("{0} verifica que el elemento no es visible",
                 actor -> {
                     WaitUntil.the(xpath, WebElementStateMatchers.isNotVisible());
+
                 }
         );
     }
